@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookAmmend - Personalized Recommendations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>BookAmmend 📚</h1>
+        <p>Your guide to the next great read.</p>
+    </header>
+
+    <main>
+        <section class="controls">
+            <h2>Find Your Next Book</h2>
+            <label for="genre-select">Select Genre:</label>
+            <select id="genre-select">
+                <option value="Fiction">Fiction</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Science Fiction">Science Fiction</option>
+                <option value="History">History</option>
+            </select>
+            <button onclick="getRecommendations()">Recommend</button>
+        </section>
+
+        <section class="recommendations">
+            <h2>Recommended for You</h2>
+            <div id="recommendation-list">
+                <p>Select a genre to see recommendations...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; BookAmmend Project 2025</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
