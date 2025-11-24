@@ -1,0 +1,4 @@
+Flask
+requests
+psycopg2-binary # If using PostgreSQL
+# or mysqlclient # If using MySQL
